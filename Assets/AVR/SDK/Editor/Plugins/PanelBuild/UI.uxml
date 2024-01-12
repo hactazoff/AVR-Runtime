@@ -1,0 +1,7 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:e="UnityEditor.UIElements" encoding="UTF-8">
+    <Box name="pb_base" class="maxsized">
+        <Box class="centered maxsized">
+            <Label name="pb_title" class="title" text="Build" />
+        </Box>
+    </Box>
+</UXML>

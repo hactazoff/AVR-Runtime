@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+    xmlns="UnityEngine.UIElements" e="UnityEditor.UIElements" encoding="UTF-8"
+    editor-extension-mode="True">
+    <ui:Box class="content panelprofile centered">
+        <ui:Box style="width: 80%; padding: 10px;">
+            <ui:Label text="Upload World" class="title"
+                style="-unity-font-style: italic; -unity-font-weight: bold; font-size: 20px; width: 100%; -unity-text-align: middle-center;" />
+            <ui:ProgressBar value="0" title="" name="puw_progress" />
+            <ui:TextField name="puw_id" label="World ID" style="margin-top: 10px;" />
+            <ui:TextField name="puw_version" label="Version" />
+            <ui:DropdownField label="Platform" name="puw_platform" include-obsolete-values="false" />
+            <ui:Button name="puw_submit" text="Upload" class="button" />
+        </ui:Box>
+    </ui:Box>
+</ui:UXML>

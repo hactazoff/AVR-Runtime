@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/AVR/UI/GameStyle.uss?fileID=7433441132597879392&amp;guid=efc22e199d6922b359271bfa292d4ef8&amp;type=3#GameStyle" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="VisualElement" class="avr box background" style="flex-grow: 0; flex-shrink: 1;">
+            <ui:Label text="Grabber Entity" class="avr" style="-unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement class="avr box background" style="flex-grow: 0;">
+            <ui:Foldout text="Grabbers">
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                    <ui:Button text="New" name="avr-grabber-new" class="avr background light box inline" style="flex-grow: 1;" />
+                    <ui:Button text="Editer" name="avr-grabber-edit" class="avr background light box inline" />
+                </ui:VisualElement>
+                <ui:VisualElement name="avr-grabber-list" style="flex-grow: 1;" />
+            </ui:Foldout>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

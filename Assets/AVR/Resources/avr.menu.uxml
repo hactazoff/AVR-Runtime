@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="avr.default" src="project://database/Assets/AVR/Resources/avr.default.uxml?fileID=9197481963319205126&amp;guid=59a56280fa6284bf4888d376a040bfcd&amp;type=3#avr.default" />
+    <Style src="project://database/Assets/AVR/UI/GameStyle.uss?fileID=7433441132597879392&amp;guid=efc22e199d6922b359271bfa292d4ef8&amp;type=3#GameStyle" />
+    <ui:VisualElement class="avr background rounded box transparent" style="flex-grow: 1; align-items: auto; justify-content: space-evenly; align-self: auto; position: absolute; top: 0; right: 0; bottom: 0; left: 0;" />
+    <ui:VisualElement name="avr-navbar" class="avr" style="flex-grow: 0; position: relative; top: auto; left: 0; right: 0; flex-direction: row; bottom: auto; justify-content: flex-start; align-items: flex-start; align-self: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-shrink: 1; width: 100%; padding-top: 16px; padding-right: 16px; padding-bottom: 0; padding-left: 16px;">
+        <ui:Button name="avr-menu-home" class="avr">
+            <ui:VisualElement class="avr background light box inline" style="flex-grow: 0;">
+                <ui:Label text="AtelierVR" class="avr glow" />
+            </ui:VisualElement>
+        </ui:Button>
+        <ui:VisualElement name="avr-notifications" style="flex-grow: 1; justify-content: flex-start; align-items: stretch;" />
+        <ui:VisualElement name="avr-options" style="flex-direction: row;">
+            <ui:Button name="avr-menu-profile" class="avr">
+                <ui:VisualElement class="avr background light box inline" style="flex-grow: 1;">
+                    <ui:Label text="0@0.0.0.0:0" name="avr-menu-profile-message" class="avr" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="avr-menu-friends" class="avr">
+                <ui:VisualElement class="avr background light box inline" style="flex-grow: 1;">
+                    <ui:Label text="0 Friends" class="avr" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="avr-menu-settings" class="avr">
+                <ui:VisualElement class="avr background light box inline" style="flex-grow: 1;">
+                    <ui:Label text="Settings" class="avr" style="position: relative; align-items: center; align-self: center;" />
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="avr-tabs" style="flex-grow: 1; margin-top: 16px; margin-right: 16px; margin-bottom: 16px; margin-left: 16px; display: flex; justify-content: center;">
+        <ui:Instance template="avr.default" name="avr-default" class="avr-default avr-hide-navbar" style="align-self: stretch; justify-content: space-between; flex-grow: 1; display: none;" />
+    </ui:VisualElement>
+</ui:UXML>

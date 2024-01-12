@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/AVR/UI/GameStyle.uss?fileID=7433441132597879392&amp;guid=efc22e199d6922b359271bfa292d4ef8&amp;type=3#GameStyle" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center; align-self: center;">
+        <ui:VisualElement class="avr box background light">
+            <ui:VisualElement name="Header" style="flex-grow: 1;">
+                <ui:Label text="Welcome" class="avr glow h1" style="margin-right: 128px; margin-left: 128px; -unity-text-align: upper-center;" />
+                <ui:VisualElement style="flex-grow: 0; flex-direction: row; justify-content: center; align-items: flex-start; align-self: auto; padding-bottom: 4px; border-bottom-width: 2px; border-top-width: 2px; border-right-width: 2px; border-left-width: 2px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                    <ui:Label text="on AVR Network" class="avr glow" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:TabView name="Body" class="avr box left right incol inline bottom">
+                <ui:Tab label="Login" name="avr-login">
+                    <ui:VisualElement class="avr input-group box right left incol bottom top" style="flex-grow: 1;">
+                        <ui:TextField label="Server" placeholder-text="://0.0.0.0:0" name="avr-login-server" class="avr first" />
+                        <ui:TextField label="Username" name="avr-login-username" class="avr" />
+                        <ui:TextField label="Password" name="avr-login-password" password="true" class="avr last" />
+                    </ui:VisualElement>
+                    <ui:Foldout text="Advanced" value="false" class="box avr background left right input-group top">
+                        <ui:IntegerField label="Code" value="0" name="avr-login-code" class="avr light first" />
+                        <ui:TextField label="Token" name="avr-login-token" class="avr light" />
+                    </ui:Foldout>
+                    <ui:Button text="Login" name="avr-login-submit" class="avr background right left bottom input box" />
+                </ui:Tab>
+                <ui:Tab label="Register" name="avr-register">
+                    <ui:VisualElement class="avr input-group box right left incol bottom top" style="flex-grow: 1;">
+                        <ui:TextField label="Server" placeholder-text="://0.0.0.0:0" name="avr-register-server" class="avr first" />
+                        <ui:TextField label="Username" name="avr-register-username" class="avr" />
+                        <ui:TextField label="Password" name="avr-register-password" password="true" class="avr" />
+                        <ui:TextField label="Confirm Password" name="avr-register-password-confirm" password="true" class="avr last" />
+                    </ui:VisualElement>
+                    <ui:Foldout text="Advanced" value="false" class="box avr background left right input-group top">
+                        <ui:TextField label="Display name" name="avr-register-displayname" class="avr first light" />
+                        <ui:IntegerField label="Invitation" value="0" name="avr-register-code" class="avr light last" />
+                    </ui:Foldout>
+                    <ui:Button text="Register" name="avr-register-submit" class="avr background right left bottom input box" />
+                </ui:Tab>
+            </ui:TabView>
+            <ui:VisualElement name="Footer" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

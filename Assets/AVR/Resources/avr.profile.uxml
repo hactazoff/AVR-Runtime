@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/AVR/UI/GameStyle.uss?fileID=7433441132597879392&amp;guid=efc22e199d6922b359271bfa292d4ef8&amp;type=3#GameStyle" />
+    <ui:VisualElement class="avr" style="flex-direction: row; flex-grow: 1;">
+        <ui:VisualElement class="avr" style="flex-grow: 0; flex-direction: row;">
+            <ui:VisualElement class="avr box background light top" style="flex-grow: 1; flex-direction: column;">
+                <ui:VisualElement style="flex-grow: 0; flex-shrink: 0;">
+                    <ui:Image name="avr-pat" class="avr background rounded" style="flex-grow: 1; width: 256px; height: 128px;">
+                        <ui:Image name="avr-put" class="avr background light rounded" style="flex-grow: 0; width: 64px; height: 64px; flex-shrink: 0; bottom: auto; left: 8px; position: absolute; top: 8px; overflow: hidden;" />
+                        <ui:VisualElement name="avr-pua" class="avr background light rounded" style="flex-grow: 0; top: 8px; right: 8px; width: 16px; height: 16px; flex-shrink: 0; position: absolute;" />
+                    </ui:Image>
+                </ui:VisualElement>
+                <ui:VisualElement class="avr incol box left right" style="flex-grow: 1;">
+                    <ui:Label text="Display" name="avr-pud" class="avr glow h2" style="-unity-text-align: upper-center;" />
+                    <ui:VisualElement class="box avr left right inline" style="flex-grow: 0;" />
+                    <ui:Button name="avr-server" class="avr" style="flex-grow: 0; flex-direction: row;">
+                        <ui:VisualElement class="avr background box left right" style="flex-grow: 1; flex-direction: row;">
+                            <ui:Image name="avr-si" class="avr background light rounded" style="flex-grow: 0; width: 32px; height: 32px; overflow: hidden;" />
+                            <ui:Label text="Server Title" name="avr-st" style="flex-grow: 1; -unity-text-align: middle-center;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:Label text="Server: IP" name="avr-pus" class="avr" style="-unity-text-align: upper-right; font-size: 8px;" />
+                <ui:Label text="ID: UUID" name="avr-puid" class="avr" style="-unity-text-align: upper-right; font-size: 8px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement class="avr" style="flex-grow: 1;">
+                <ui:VisualElement class="avr box background light top" style="flex-grow: 0; flex-direction: row; justify-content: flex-end;">
+                    <ui:VisualElement style="flex-grow: 0;">
+                        <ui:Label text="Profile" class="avr glow h2" style="-unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="avr-selfmod" style="flex-grow: 1; flex-direction: row; justify-content: flex-end;">
+                        <ui:Button name="avr-selfmod-mute" class="avr">
+                            <ui:VisualElement class="avr background box inline top bottom" style="flex-grow: 1; justify-content: center;">
+                                <ui:Label text="Mute" class="avr" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button text="Block" name="avr-selfmod-block" class="avr">
+                            <ui:VisualElement name="VisualElement" class="avr background box inline top bottom" style="flex-grow: 1; justify-content: center;">
+                                <ui:Label text="Block" class="avr" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button text="Warn" name="avr-selfmod-warn" class="avr">
+                            <ui:VisualElement class="avr background box inline top bottom right" style="flex-grow: 1; justify-content: center;">
+                                <ui:Label text="Warn" class="avr" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="avr box background light" style="flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

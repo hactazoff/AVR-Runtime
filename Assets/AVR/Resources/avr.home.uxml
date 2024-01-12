@@ -1,0 +1,66 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="avr.widget" src="project://database/Assets/AVR/Resources/avr.widget.uxml?fileID=9197481963319205126&amp;guid=211fa37256a04713f85e732ac0659638&amp;type=3#avr.widget" />
+    <Style src="project://database/Assets/AVR/UI/GameStyle.uss?fileID=7433441132597879392&amp;guid=efc22e199d6922b359271bfa292d4ef8&amp;type=3#GameStyle" />
+    <ui:VisualElement class="avr" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement class="avr" style="flex-grow: 0; max-width: none; min-width: 200px; min-height: auto;">
+            <ui:VisualElement class="avr box top background light" style="flex-grow: 1;">
+                <ui:Label text="Notifs" class="avr h2 glow" style="-unity-text-align: upper-center;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-shrink: 1;">
+            <ui:VisualElement class="avr background light box top" style="flex-grow: 0; flex-shrink: 0; flex-direction: row;">
+                <ui:Label text="Dashboard" name="Label" class="avr glow h2" style="flex-shrink: 1; flex-grow: 1;" />
+                <ui:Label text="Welcome!" name="avr-db-wm" style="-unity-text-align: middle-right;" />
+            </ui:VisualElement>
+            <ui:VisualElement class="box avr background light" style="flex-grow: 1;" />
+            <ui:VisualElement style="flex-grow: 0; align-items: stretch; align-self: stretch; justify-content: center;">
+                <ui:VisualElement class="avr box background light" style="flex-grow: 1; flex-direction: row;">
+                    <ui:Label text="Applications" class="avr h3 glow" style="flex-shrink: 0; flex-grow: 1; -unity-text-align: middle-left;" />
+                    <ui:Button name="avr-widgets-more" class="avr" style="align-items: flex-end;">
+                        <ui:VisualElement class="avr box inline background top bottom right left" style="flex-grow: 1;">
+                            <ui:Label text="Show more" class="avr" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:GroupBox name="avr-widgets" style="flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; flex-grow: 0; flex-shrink: 1;">
+                    <ui:Instance template="avr.widget" />
+                    <ui:Instance template="avr.widget" />
+                    <ui:Instance template="avr.widget" />
+                </ui:GroupBox>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="avr" style="flex-grow: 0; min-width: 200px;">
+            <ui:VisualElement class="avr box background top light" style="flex-grow: 0; flex-shrink: 1;">
+                <ui:Label text="Debug" class="avr h2 glow" style="-unity-text-align: upper-center;" />
+                <ui:Label text="0 FPS" name="avr-db-fps" class="avr" style="align-items: flex-start; -unity-text-align: upper-center;" />
+                <ui:Label text="Host: -1 ms" name="avr-db-host-ping" class="avr" style="align-items: flex-start; -unity-text-align: upper-center;" />
+            </ui:VisualElement>
+            <ui:VisualElement class="avr box background light" style="flex-grow: 1;">
+                <ui:Label text="Action" class="avr glow h2" style="-unity-text-align: upper-center;" />
+                <ui:VisualElement class="avr input-group box incol top left right bottom" style="flex-grow: 1;">
+                    <ui:Button name="avr-action-home" class="avr" style="align-items: flex-end;">
+                        <ui:VisualElement class="avr box background top bottom right left" style="align-self: stretch;">
+                            <ui:Label text="Home" class="avr" style="flex-grow: 1; flex-shrink: 1;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button name="avr-action-respawn" class="avr" style="align-items: flex-end;">
+                        <ui:VisualElement class="avr box background top bottom right left" style="align-self: stretch;">
+                            <ui:Label text="Show more" class="avr" style="flex-grow: 1; flex-shrink: 1;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button name="avr-action-calibrate" class="avr" style="align-items: flex-end;">
+                        <ui:VisualElement class="avr box background top bottom right left" style="align-self: stretch;">
+                            <ui:Label text="Show more" class="avr" style="flex-grow: 1; flex-shrink: 1;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:VisualElement style="flex-grow: 1;" />
+                </ui:VisualElement>
+                <ui:Button name="avr-action-quit" class="avr" style="align-items: flex-end;">
+                    <ui:VisualElement class="avr box background top bottom right left" style="align-self: stretch;">
+                        <ui:Label text="Quit Game" class="avr" style="flex-grow: 1; flex-shrink: 1;" />
+                    </ui:VisualElement>
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,13 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:e="UnityEditor.UIElements" encoding="UTF-8"
+    class="centered maxsized">
+    <Box style="width: 80%; padding: 10px;">
+        <Label class="title" text="Avatar"
+            style="-unity-font-style: italic; -unity-font-weight: bold; font-size: 20px; width: 100%; -unity-text-align: middle-center;" />
+        <Button name="pba_select" class="button" text="Select Avatar Descriptor" />
+        <TextField name="pba_name" label="Avatar Name" style="margin-top: 10px;" />
+        <Button name="pba_detect" class="button" text="Detect current platform"
+            style="margin-top: 10px;" />
+        <DropdownField label="Platform" name="pba_platform" include-obsolete-values="false" />
+        <Button name="pba_build" class="button" text="Build Avatar" />
+    </Box>
+</UXML>

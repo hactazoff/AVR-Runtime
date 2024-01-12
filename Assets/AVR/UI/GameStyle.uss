@@ -1,0 +1,192 @@
+.avr {
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.avr * {
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.avr.rounded {
+    border-radius: 8px;
+}
+
+.avr.box {
+    border-radius: 4px;
+    margin: 4px;
+    padding: 8px;
+}
+
+.avr.box.top {
+    margin-top: 0;
+}
+
+.avr.box.right {
+    margin-right: 0;
+}
+
+.avr.box.bottom {
+    margin-bottom: 0;
+}
+
+.avr.box.left {
+    margin-left: 0;
+}
+
+.avr.box.inline {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.avr.box.incol {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.avr.background.transparent {
+    background-color: rgb(37, 37, 37);
+    -unity-background-image-tint-color: rgba(37, 37, 37, 0.25);
+}
+
+.avr.background {
+    background-color: rgb(37, 37, 37);
+    background-image: url('project://database/Assets/AVR/Textures/background.png?fileID=2800000&guid=0665b924900f8554f8ccf95851058078&type=3#background');
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+.avr.background.light.transparent {
+    background-color: rgb(62, 62, 62);
+    -unity-background-image-tint-color: rgba(62, 62, 62, 0.25);
+}
+
+.avr.background.light {
+    background-color: rgb(62, 62, 62);
+    background-image: url('project://database/Assets/AVR/Textures/background.png?fileID=2800000&guid=0665b924900f8554f8ccf95851058078&type=3#background');
+    -unity-slice-scale: 1px;
+}
+
+.avr.h1 {
+    font-size: 32px;
+}
+
+.avr.h2 {
+    font-size: 24px;
+}
+
+.avr.input {
+    padding: 4px;
+}
+
+.avr.input-group > .avr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.avr.input-group > .avr.first {
+    margin-top: 0;
+}
+
+.avr.input-group > .avr.last {
+    margin-bottom: 0;
+}
+
+.avr.unity-button {
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.avr.unity-button:active {
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.avr.unity-button:hover {
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.avr.button:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+.avr.button:active {
+    background-color: rgb(100, 100, 100);
+}
+
+.avr.label {
+    padding: 0;
+    margin: 0;
+}
+
+.avr.unity-base-field .unity-base-field__input {
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 4px;
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(37, 37, 37);
+}
+
+.avr.unity-base-field.light .unity-base-field__input {
+    background-color: rgb(62, 62, 62);
+}
+
+.avr.unity-base-field .unity-base-field__label {
+    align-self: center;
+}
+
+.avr.glow {
+    -unity-font-style: italic;
+    letter-spacing: 16px;
+}
+
+.avr.unity-tab-view .unity-tab-view__header-container {
+    background-color: rgb(37, 37, 37);
+    padding: 8px;
+    align-self: center;
+    border-radius: 4px;
+}
+
+.avr.unity-tab-view .unity-tab-view__header-container .unity-tab__header:checked {
+    -unity-font-style: bold;
+}
+
+.avr.unity-tab-view .unity-tab-view__header-container .unity-tab__header {
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.avr.unity-tab-view .unity-tab-view__header-container .unity-tab__header-underline {
+    display: none;
+}
+
+.avr.unity-tab-view .unity-tab-view__content-container {
+    padding-top: 8px;
+}
+
+#avr-navbar.hide {
+    display: none;
+}
+
+#avr-tabs > * {
+    flex-grow: 1;
+}
+
+#avr-base > * {
+    flex-grow: 1;
+}
+
+.avr.unity-toolbar {
+    background-color: rgba(0, 0, 0, 0);
+}

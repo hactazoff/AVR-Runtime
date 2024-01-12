@@ -1,0 +1,48 @@
+#root .header .title {
+    font-size: 20px;
+    -unity-font-style: bold;
+    width: 100%;
+    -unity-text-align: middle-center;
+}
+#root .header .buttons {
+    width: 100%;
+    -unity-text-align: middle-center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#root .header .buttons .button {
+    margin: 5px;
+}
+#root .header {
+    padding: 20px 0px;
+}
+#root {
+    width: 100%;
+    height: 100%;
+}
+#root .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#root .footer {
+    width: 100%;
+    -unity-text-align: middle-right;
+    padding: 20px 10px 10px 10px;
+}
+
+#root .centered,
+#root .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#root .maxsized,
+#root .panel {
+    width: 100%;
+    height: 100%;
+}

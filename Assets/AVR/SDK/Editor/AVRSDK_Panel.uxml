@@ -1,0 +1,19 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:e="UnityEditor.UIElements" encoding="UTF-8">
+    <Style src="AVRSDK_Panel.uss" />
+    <Box name="root" class="content">
+        <Box name="header" class="header">
+            <Label name="title" class="title" text="Atelier SDK" />
+            <Box name="buttons" class="buttons">
+                <Button name="reload" class="reload button" text="Reload" />
+            </Box>
+        </Box>
+        <Box name="body" class="body">
+            <Box class="Welcome panel">
+                <Label text="Welcome to AVR SDK" StyleSheet="font-style: italic; font-weight: bold;" />
+            </Box>
+        </Box>
+        <Box class="footer">
+            <Label text="Par Hactazia"/>
+        </Box>
+    </Box>
+</UXML>

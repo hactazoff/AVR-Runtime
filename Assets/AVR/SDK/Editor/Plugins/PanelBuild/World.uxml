@@ -1,0 +1,14 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:e="UnityEditor.UIElements" encoding="UTF-8"
+    class="centered maxsized">
+    <Box style="width: 80%; padding: 10px;">
+        <Label class="title" text="World"
+            style="-unity-font-style: italic; -unity-font-weight: bold; font-size: 20px; width: 100%; -unity-text-align: middle-center;" />
+        <Button name="pbw_select" class="button" text="Select World Descriptor" />
+        <TextField name="pbw_name" label="World Name" style="margin-top: 10px;" />
+        <TextField name="pbw_localid" label="Local Id" />
+        <Button name="pbw_detect" class="button" text="Detect current platform"
+            style="margin-top: 10px;" />
+        <DropdownField label="Platform" name="pbw_platform" include-obsolete-values="false" />
+        <Button name="pbw_build" class="button" text="Build World" />
+    </Box>
+</UXML>

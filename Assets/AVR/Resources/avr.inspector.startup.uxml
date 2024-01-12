@@ -1,0 +1,69 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/AVR/UI/GameStyle.uss?fileID=7433441132597879392&amp;guid=efc22e199d6922b359271bfa292d4ef8&amp;type=3#GameStyle" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="VisualElement" class="avr box background" style="flex-grow: 0; flex-shrink: 1;">
+            <ui:Label text="Atelier VR" class="avr glow h1" style="-unity-text-align: upper-center;" />
+            <ui:Label text="Main Script" class="avr" style="-unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement class="avr box background" style="flex-grow: 0;">
+            <ui:Foldout text="Server Manager">
+                <ui:VisualElement class="avr box incol right left" style="flex-grow: 1;">
+                    <uie:Toolbar class="avr" style="visibility: visible;">
+                        <uie:ToolbarButton class="unity-button avr">
+                            <ui:VisualElement class="avr box inline left right background light top bottom" style="flex-grow: 1;">
+                                <ui:Label text="Clear all" style="flex-shrink: 1; flex-grow: 1;" />
+                            </ui:VisualElement>
+                        </uie:ToolbarButton>
+                        <uie:ToolbarSearchField style="flex-grow: 1;" />
+                    </uie:Toolbar>
+                </ui:VisualElement>
+                <ui:VisualElement name="arv-server-list" style="flex-grow: 1;" />
+            </ui:Foldout>
+        </ui:VisualElement>
+        <ui:VisualElement class="avr box background" style="flex-grow: 0;">
+            <ui:Foldout text="User Manager">
+                <ui:VisualElement class="avr box incol right left" style="flex-grow: 1;">
+                    <uie:Toolbar class="avr" style="visibility: visible;">
+                        <uie:ToolbarButton class="unity-button avr">
+                            <ui:VisualElement class="avr box inline left right background light top bottom" style="flex-grow: 1;">
+                                <ui:Label text="Clear all" style="flex-shrink: 1; flex-grow: 1;" />
+                            </ui:VisualElement>
+                        </uie:ToolbarButton>
+                        <uie:ToolbarSearchField style="flex-grow: 1;" />
+                    </uie:Toolbar>
+                </ui:VisualElement>
+                <ui:VisualElement name="arv-user-list" style="flex-grow: 1;" />
+            </ui:Foldout>
+        </ui:VisualElement>
+        <ui:VisualElement class="avr box background" style="flex-grow: 0;">
+            <ui:Foldout text="Socket Manager">
+                <ui:VisualElement class="avr box incol right left" style="flex-grow: 1;">
+                    <uie:Toolbar class="avr" style="visibility: visible;">
+                        <uie:ToolbarButton class="unity-button avr">
+                            <ui:VisualElement class="avr box inline left right background light top bottom" style="flex-grow: 1;">
+                                <ui:Label text="Clear all" style="flex-shrink: 1; flex-grow: 1;" />
+                            </ui:VisualElement>
+                        </uie:ToolbarButton>
+                        <uie:ToolbarSearchField style="flex-grow: 1;" />
+                    </uie:Toolbar>
+                </ui:VisualElement>
+                <ui:VisualElement name="arv-socket-list" style="flex-grow: 1;" />
+            </ui:Foldout>
+        </ui:VisualElement>
+        <ui:VisualElement class="avr box background" style="flex-grow: 0;">
+            <ui:Foldout text="Instance Manager">
+                <ui:VisualElement class="avr box incol right left" style="flex-grow: 1;">
+                    <uie:Toolbar class="avr" style="visibility: visible;">
+                        <uie:ToolbarButton class="unity-button avr">
+                            <ui:VisualElement class="avr box inline left right background light top bottom" style="flex-grow: 1;">
+                                <ui:Label text="Clear all" style="flex-shrink: 1; flex-grow: 1;" />
+                            </ui:VisualElement>
+                        </uie:ToolbarButton>
+                        <uie:ToolbarSearchField style="flex-grow: 1;" />
+                    </uie:Toolbar>
+                </ui:VisualElement>
+                <ui:VisualElement name="arv-instance-list" style="flex-grow: 1;" />
+            </ui:Foldout>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

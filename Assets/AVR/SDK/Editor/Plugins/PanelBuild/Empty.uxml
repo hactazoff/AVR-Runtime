@@ -1,3 +1,0 @@
-<UXML xmlns="UnityEngine.UIElements" xmlns:e="UnityEditor.UIElements" encoding="UTF-8" class="centered maxsized">
-    <Label name="pb_title" class="title" text="No World or Avatar found." />
-</UXML>

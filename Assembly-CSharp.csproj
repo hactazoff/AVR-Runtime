@@ -28,7 +28,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2023_2_1;UNITY_2023_2;UNITY_2023;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;ENABLE_NULLDEPTHBUFFER;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2023_2_1;UNITY_2023_2;UNITY_2023;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;ENABLE_NULLDEPTHBUFFER;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;USE_INPUT_SYSTEM_POSE_CONTROL;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -65,321 +65,51 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2023.2.1f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AutoHand\Scripts\Templates\PlacePointEventDebugger.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\BowlingManager.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\PlacePoint.cs" />
-    <Compile Include="Assets\AVR\Networking\AVR_Socket.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\HandBase.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Gadgets\PhysicsGadgetConfigurableLimitReader.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\AutoBow.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbableExtensions.cs" />
-    <Compile Include="Assets\AVR\Plugin\AVR_PluginManager.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbableCollisionHaptics.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\AVR\Networking\AVR_Response.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\AutoAmmo.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\IgnoreHandLayer.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandPublicEvents.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\Pushable.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Text Demo\TextGrabEvent.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Gadgets\PhysicsGadgetButton.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\PlayerFallCatcher.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\CubeBreak.cs" />
-    <Compile Include="Assets\Scripts\XRUIInputModuleFix\TouchModel.cs" />
-    <Compile Include="Assets\AVR\User\AVR_UserMe.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\InterpolatedTransform.cs" />
-    <Compile Include="Assets\AVR\SDK\SampleMap\TestProg.cs" />
-    <Compile Include="Assets\AVR\World\AVR_WorldDescriptor.cs" />
-    <Compile Include="Assets\AVR\UI\Tabs\AVR_Home.plugin.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\SerializedJointDrive.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Gadgets\PhysicsGadgetSlider.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Text Demo\SliderTextChanger.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRMover.cs" />
-    <Compile Include="Assets\AVR\Entity\AVR_Entity.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\CollisionSound.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\HeadCameraSmoothing.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\PlaceJoint.cs" />
-    <Compile Include="Assets\AVR\UI\Tabs\AVR_Settings.plugin.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUISlider.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\DispenserPoint.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\WristLookEvent.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Animations\LineAnimation.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\MagneticSource.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\HandVelocityTracker.cs" />
-    <Compile Include="Assets\AVR\UI\AVR_BaseUI.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Templates\HandEventDebugger.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbablePose.cs" />
-    <Compile Include="Assets\Scripts\XRUIInputModuleFix\UIInputModuleFix.cs" />
-    <Compile Include="Assets\AVR\Plugin\AVR_Plugin.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Gadget Demo\WheelRotator.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUIKeyboard.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\HeadPhysicsFollower.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\Sticky.cs" />
-    <Compile Include="Assets\AVR\World\AVR_World.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRAutoHandAxisFingerBender.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\DynamicTimestepSetter.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\BoxingGlove.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUICheckbox.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandClippingGuard.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRTeleporterLink.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\InterpolationController.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUIControlBarButton.cs" />
-    <Compile Include="Assets\Firesplash Entertainment\Socket.IO\Examples\Main Example\ExampleScript.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\HeldPlaceJoint.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUIRadio.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbableOnlyJoint.cs" />
-    <Compile Include="Assets\AVR\UI\AVR_Menu.plugin.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRControllerEvent.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\HandCanvasPointer.cs" />
-    <Compile Include="Assets\Scripts\WorldSpaceUIDocument.cs" />
-    <Compile Include="Assets\AVR\Entity\AVR_Player.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\AVR\Other\AVR_Utils.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\HandStabilizer.cs" />
-    <Compile Include="Assets\AVR\UI\Tabs\AVR_Profile.plugin.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\HandPoseScriptable.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbableChild.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\Smash.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandTouchEvent.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\AutoGun.cs" />
-    <Compile Include="Assets\AVR\UI\Tabs\AVR_Server.plugin.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\Pistol.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\AutoInputModule.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\SerializedSoftJointLimit.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Templates\GrabbableEventDebugger.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\AVR\Menu\RectSizeSplit.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\Smasher.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbablePoseAdvanced.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\Stickable.cs" />
-    <Compile Include="Assets\AVR\Session\AVR_Session.cs" />
-    <Compile Include="Assets\AVR\Avatar\AvatarDescriptor.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\PhysicsFollower.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRHandPointGrabLink.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRHandPlayerControllerLink.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Templates\PlacePointEventTemplate.cs" />
-    <Compile Include="Assets\AVR\Menu\AVR_HanddedMenu.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\EditorHand.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbableSubstitute.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Text Demo\TextInformation.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\AutoGunTarget.cs" />
-    <Compile Include="Assets\Samples\App UI\1.0.0-pre.11\UI Kit\Scripts\Examples.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\AutoHandExtensions.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\AutoAnimation.cs" />
-    <Compile Include="Assets\Scripts\XRUIInputModuleFix\JoystickModel.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Gadget Demo\PhysicsSliderPositionMover.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Text Demo\LeverTextChanger.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUIPagination.cs" />
-    <Compile Include="Assets\AVR\UI\Tabs\AVR_Welcome.plugin.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\GrabbableHeldJoint.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\Scripts\XRUIInputModuleFix\UIInputModuleFix.Events.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandDistanceGrabber.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\WeightlessFollower.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\Finger.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\JointBreakStopForce1.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Text Demo\TextPlacePointEvent.cs" />
-    <Compile Include="Assets\AVR\User\AVR_User.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Attributes\AutoToggleHeaderAttribute.cs" />
-    <Compile Include="Assets\XRPlatformControllerSetup.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\HandGizmos.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\AutoGunEffects.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandTeleportGuard.cs" />
-    <Compile Include="Assets\AVR\Entity\AVR_Actor.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandPoseArea.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\ExplosionSource.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Gadgets\PhysicsGadgetJoystick.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\DemoFlyingToggle.cs" />
-    <Compile Include="Assets\AVR\UI\Tabs\AVR_Default.plugin.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandTriggerAreaEvents.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\GrabbableBase.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Attributes\AutoLineAttribute.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbableThrowEvent.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Attributes\AutoSmallHeaderAttribute.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\Stabber.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandControllerLink.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Text Demo\TextFieldInspector.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Text Demo\TMPSizeProtector.cs" />
-    <Compile Include="Assets\AVR\Networking\AVR_SocketManager.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUIButtonIconToggle.cs" />
-    <Compile Include="Assets\AVR\Scene\AVR_Scene.cs" />
-    <Compile Include="Assets\AVR\UI\Tabs\AVR_Ping.plugin.cs" />
-    <Compile Include="Assets\AVR\Server\AVR_Server.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\Climbable.cs" />
-    <Compile Include="Assets\AVR\UI\Tabs\AVR_Instance.plugin.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\Stabbable.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Attributes\AutoHeaderAttribute.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Gadget Demo\ButtonDemoRespawn.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\Teleporter.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Templates\HandEventTemplate.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabLock.cs" />
-    <Compile Include="Assets\Firesplash Entertainment\Socket.IO\Examples\Local Ping Pong Sample\PingPongClientSample.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbablePoseCombiner.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\ReloadSceneByName.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\KeyboardHand.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRHeadTracking.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUIToggle.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\HandSwapper.cs" />
-    <Compile Include="Assets\AVR\Networking\AVR_Downloader.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandProjector.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUILookAtCam.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\ToggleHandProjection.cs" />
-    <Compile Include="Assets\AVR\Instance\AVR_InstanceManager.cs" />
-    <Compile Include="Assets\AVR\World\AVR_WorldAsset.cs" />
-    <Compile Include="Assets\Scripts\XRUIInputModuleFix\XRUIInputModuleFix.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\ToggleAutoMoveFlying.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\UnlockChest.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\AutoArrow.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\OpenLink.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\Hand.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\SerializedSoftJointLimitSpring.cs" />
-    <Compile Include="Assets\AVR\Other\AVR_Input.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\InterpolatedTransformUpdater.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Gadgets\PhysicsGadgetHingeAngleReader.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandFingerTouch.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandAdvancedOptions.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRAutoHandFingerBender.cs" />
-    <Compile Include="Assets\AVR\Networking\AVR_NetworkTransport.cs" />
-    <Compile Include="Assets\AVR\Log\AVR_Debug.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRHandOffset.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Gadget Demo\JoystickObjectMover.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\PlayerPlatform.cs" />
-    <Compile Include="Assets\AVR\Server\AVR_ServerManager.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Templates\HandTouchEventDebugger.cs" />
-    <Compile Include="Assets\AVR\AVR_Startup.cs" />
-    <Compile Include="Assets\AVR\Entity\AVR_Grabable.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\FinalIK (Full Body)\AutoHandVRIK.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUIOutlineButton.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Gadget Demo\MoverLever.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\MagneticBody.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\AutoHandPlayerForceArea.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\CollisionIgnores.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Demo\SampleSceneAssets\SampleSceneManager.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\Door.cs" />
-    <Compile Include="Assets\Scripts\XRUIInputModuleFix\IUIInteractorRegisterer.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Text Demo\TextChanger.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Helpers\OnPlaceIgnoreHands.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\Spinner.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Gadgets\PhysicsGadgetLever.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\AVR\Instance\AVR_Instance.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Gadgets\JointExtensions.cs" />
-    <Compile Include="Assets\Scripts\XRUIInputModuleFix\MouseModel.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Hand\HandCollisionHaptics.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\IgnoreHandPlayerCollision.cs" />
-    <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\XRHandControllerLink.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\DemoExitCondition.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\PlatformMover.cs" />
-    <Compile Include="Assets\AVR\User\AVR_UserManager.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\BETA\GrabbablePoseAnimaion.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\GrabbableExtraEvents.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUITooltip.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Gadgets\HandTouchButton.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUITabButton.cs" />
-    <Compile Include="Assets\VRUI - Material Design\Assets\Scripts\VRUIColorPalette.cs" />
-    <Compile Include="Assets\Firesplash Entertainment\Socket.IO\Examples\Multi Scene Example\MultiSceneExampleScript.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\TomatoSpawner.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\Grabbable.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Internal\HandPoseData.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Gadget Demo\DialHandScaler.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\ScaleHighlight.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Movement\AutoHandPlayer.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\AutoHandSettings.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Demo\Demo Scene\Grenade.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Grabbable\DistanceGrabbable.cs" />
-    <Compile Include="Assets\AutoHand\Scripts\Tools\CollisionTracker.cs" />
+    <Compile Include="Assets\AVR\Network\HTTPRequest.cs" />
+    <Compile Include="Assets\AVR\Input\VRInput.cs" />
+    <Compile Include="Assets\AVR\Base\Controller.cs" />
+    <Compile Include="Assets\AVR\User\UserMe.cs" />
+    <Compile Include="Assets\AVR\Utils\Config.cs" />
+    <Compile Include="Assets\AVR\Server\ServerManager.cs" />
+    <Compile Include="Assets\AVR\Launcher\ServerLauncher.cs" />
+    <Compile Include="Assets\AVR\Utils\Debug.cs" />
+    <Compile Include="Assets\AVR\Controller\VRController.cs" />
+    <Compile Include="Assets\AVR\Server\ServerGateways.cs" />
+    <Compile Include="Assets\AVR\User\User.cs" />
+    <Compile Include="Assets\AVR\Utils\Scene.cs" />
+    <Compile Include="Assets\AVR\Base\MonoBehaviour.cs" />
+    <Compile Include="Assets\AVR\Utils\Test.cs" />
+    <Compile Include="Assets\AVR\Utils\HelloWorld.cs" />
+    <Compile Include="Assets\AVR\Instance\InstancePatern.cs" />
+    <Compile Include="Assets\AVR\Launcher\ClientLauncher.cs" />
+    <Compile Include="Assets\AVR\User\UserPatern.cs" />
+    <Compile Include="Assets\AVR\Modding\ModManager.cs" />
+    <Compile Include="Assets\AVR\Utils\XR.cs" />
+    <Compile Include="Assets\AVR\UI\MinimalMenu.cs" />
+    <Compile Include="Assets\AVR\Instance\Instance.cs" />
+    <Compile Include="Assets\AVR\Utils\Save.cs" />
+    <Compile Include="Assets\AVR\User\UserManager.cs" />
+    <Compile Include="Assets\AVR\Instance\InstanceManager.cs" />
+    <Compile Include="Assets\AVR\Controller\DesktopController.cs" />
+    <Compile Include="Assets\AVR\Server\Server.cs" />
+    <Compile Include="Assets\AVR\Base\Manager.cs" />
+    <Compile Include="Assets\AVR\Entity\Player.cs" />
+    <Compile Include="Assets\AVR\Base\Launcher.cs" />
+    <Compile Include="Assets\AVR\Entity\Entity.cs" />
+    <Compile Include="Assets\AVR\UI\Menu.cs" />
+    <Compile Include="Assets\AVR\Entity\Actor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Roboto-Bold - License.txt" />
-    <None Include="Assets\Firesplash Entertainment\Socket.IO\Examples\ServerSide.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\AVR\Resources\avr.widget.uxml" />
     <None Include="Assets\AVR\Resources\avr.menu.uxml" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Unity - OFL.txt" />
-    <None Include="Assets\Firesplash Entertainment\Socket.IO\Examples\Multi Scene Example\__READ THIS FIRST__.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\AutoHand\Examples\Shaders\DoubleSided.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Roboto-Bold - AFL.txt" />
     <None Include="Assets\AVR\Resources\avr.profile.uxml" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\AVR\Resources\avr.inspector.startup.item.uxml" />
-    <None Include="Assets\Samples\App UI\1.0.0-pre.11\UI Kit\SampleResources\ExampleTransparent.uxml" />
-    <None Include="Assets\AutoHand\Documents\LICENSE.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Examples 1.uxml" />
-    <None Include="Assets\AutoHand\Documents\CHANGELOG.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
     <None Include="Assets\AVR\Resources\avr.inspector.startup.uxml" />
-    <None Include="Assets\Samples\App UI\1.0.0-pre.11\UI Kit\SampleResources\Examples.uss" />
-    <None Include="Assets\VRUI - Material Design\Documentation\README.txt" />
     <None Include="Assets\AVR\Resources\avr.server.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\UIToolkitAssets\UnityThemes\NewUSSFile.uss" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\AVR\UI\Examples 1.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\Samples\App UI\1.0.0-pre.11\UI Kit\SampleResources\Examples.uxml" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\AVR\Resources\avr.welcome.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\AVR\Resources\avr.default.uxml" />
     <None Include="Assets\AVR\Resources\avr.settings.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\AutoHand\Documents\CREDITS.txt" />
-    <None Include="Assets\AVR\UI\BaseUI.uxml" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\AVR\UI\Notification\Default.uxml" />
-    <None Include="Assets\AutoHand\Examples\Shaders\Outline.shader" />
-    <None Include="Assets\UIToolkitAssets\test.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\AutoHand\Examples\Scenes\FinalIK (Full Body)\readme.txt" />
     <None Include="Assets\AVR\Resources\avr.home.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\UIToolkitAssets\screenspace.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\VRUI - Material Design\Assets\Fonts\Roboto\LICENSE.txt" />
-    <None Include="Assets\AVR\UI\Notification\Widgets\DownloadWorld.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
-    <None Include="Assets\AVR\UI\GameStyle.uss" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1334,40 +1064,28 @@
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.XR.MockHMD">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.MockHMD.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AppUI.Navigation.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.Navigation.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Tutorials.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Tutorials.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.XR.CoreUtils">
       <HintPath>Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.007">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.007.dll</HintPath>
+    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.XR.MockHMD.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.MockHMD.Editor.dll</HintPath>
+    <Reference Include="Unity.Tutorials.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Tutorials.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.007">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.007.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
@@ -1406,10 +1124,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.WebRTC.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.WebRTC.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1434,10 +1148,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.007.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AppUI">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1456,10 +1166,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AppUI.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.AppUI.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.XR.Management">
@@ -1486,16 +1192,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.XR.OpenXR.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport">
@@ -1546,10 +1252,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.WebRTC">
-      <HintPath>Library\ScriptAssemblies\Unity.WebRTC.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.XR.CoreUtils.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.CoreUtils.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1568,13 +1270,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj" />
+    <ProjectReference Include="UniTask.Linq.csproj" />
     <ProjectReference Include="NaughtyAttributes.Editor.csproj" />
-    <ProjectReference Include="Unity.WebRTC.Samples.Editror.csproj" />
-    <ProjectReference Include="RootMotion.csproj" />
-    <ProjectReference Include="Firesplash.GameDevAssets.SocketIO.csproj" />
-    <ProjectReference Include="Unity.WebRTC.Samples.csproj" />
-    <ProjectReference Include="RootMotionEditor.csproj" />
+    <ProjectReference Include="UniTask.csproj" />
+    <ProjectReference Include="AVR.SDK.csproj" />
+    <ProjectReference Include="UniTask.Addressables.csproj" />
     <ProjectReference Include="NaughtyAttributes.Core.csproj" />
+    <ProjectReference Include="UniTask.DOTween.csproj" />
+    <ProjectReference Include="UniTask.TextMeshPro.csproj" />
+    <ProjectReference Include="fr.hactazia.modtest.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

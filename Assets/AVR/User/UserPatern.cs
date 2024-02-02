@@ -1,7 +1,7 @@
 using System.Text.RegularExpressions;
 
 namespace AVR {
-    namespace User {
+    namespace Users {
         public class UserPatern {
             public string id = null;
             public string username = null;

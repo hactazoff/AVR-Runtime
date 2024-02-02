@@ -3,7 +3,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine.Networking;
 
 namespace AVR {
-    namespace Server {
+    namespace Servers {
         [System.Serializable]
         public class Server {
             public string id;
@@ -50,6 +50,8 @@ namespace AVR {
                 };
                 return gateways;
             }
+
+            public override string ToString() => ":@" + address;
         }
     }
 }

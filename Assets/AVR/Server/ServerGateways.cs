@@ -1,6 +1,6 @@
 namespace AVR
 {
-    namespace Server
+    namespace Servers
     {
         [System.Serializable]
         public class ServerGateways

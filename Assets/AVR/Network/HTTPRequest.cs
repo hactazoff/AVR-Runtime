@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -14,13 +15,20 @@ namespace AVR
 
 
 
-            public async static UniTask<T> Get<T>(string url)
+            public async static UniTask<T> Get<T>(string url, UnityWebRequest request = null)
             {
-                var request = UnityWebRequest.Get(url);
-                await request.SendWebRequest();
-                if (request.responseCode == 200)
-                    return JsonUtility.FromJson<Response<T>>(request.downloadHandler.text).data;
-                return default;
+                try
+                {
+                    request ??= UnityWebRequest.Get(url);
+                    request.SetRequestHeader("Cookie", "");
+                    request.SetRequestHeader("User-Agent", "AVR/" + Application.version + " (Unity/" + Application.unityVersion + "; " + Application.platform + ")");
+                    await request.SendWebRequest();
+                    AVR.Utils.Debug.Log(request.downloadHandler.text);
+                    if (request.responseCode == 200)
+                        return JsonUtility.FromJson<Response<T>>(request.downloadHandler.text).data;
+                    return default;
+                }
+                catch { return default; }
             }
 
             public async static UniTask<string> FetchMostProtocol(string address)

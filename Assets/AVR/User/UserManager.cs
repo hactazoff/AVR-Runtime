@@ -3,10 +3,23 @@ using Cysharp.Threading.Tasks;
 
 namespace AVR
 {
-    namespace User
+    namespace Users
     {
         public class UserManager : Base.Manager<User>
         {
+            public delegate void OnUserUpdateEvent(User user);
+            public static event OnUserUpdateEvent OnUserUpdate;
+            public static void OnUpdate(User user) => OnUserUpdate?.Invoke(user);
+
+            public delegate void OnUserRemoveEvent(User user);
+            public static event OnUserRemoveEvent OnUserRemove;
+            public static void OnRemove(User user) => OnUserRemove?.Invoke(user);
+
+            public delegate void OnUserAddEvent(User user);
+            public static event OnUserAddEvent OnUserAdd;
+            public static void OnAdd(User user) => OnUserAdd?.Invoke(user);
+
+
             /**
              * Get a user by id or username and server address.
              */
@@ -15,32 +28,10 @@ namespace AVR
                 var up = UserPatern.Parser(search);
                 if (up == null)
                     return null;
-                User user = null;
-                if (up.id != null)
-                    user = GetUserById(up.id, up.server);
-                if (up.username != null && user == null)
-                    user = GetUserByUsername(up.username, up.server);
-                return user;
-            }
-
-            /**
-             * Get a user by id.
-             */
-            public static User GetUserById(string id, string server)
-            {
-                foreach (User user in Cache)
-                    if (user.id == id && user.server == server)
+                foreach (var user in Cache)
+                    if (user.id == up.id && user.server == up.server)
                         return user;
-                return null;
-            }
-
-            /**
-             * Get a user by username.
-             */
-            public static User GetUserByUsername(string username, string server)
-            {
-                foreach (User user in Cache)
-                    if (user.username == username && user.server == server)
+                    else if (user.username == up.username && user.server == up.server)
                         return user;
                 return null;
             }
@@ -50,8 +41,16 @@ namespace AVR
              */
             public static void SetUser(User user)
             {
-                RemoveUser(user);
-                Cache.Add(user);
+                if (GetUser(user.id) != null)
+                {
+                    Cache.Add(user);
+                    OnUpdate(user);
+                }
+                else
+                {
+                    Cache.Add(user);
+                    OnAdd(user);
+                }
             }
 
             /**
@@ -59,29 +58,28 @@ namespace AVR
              */
             public static void RemoveUser(User user)
             {
-                if (GetUserById(user.id, user.server) != null)
-                    Cache.Remove(user);
-                if (GetUserByUsername(user.username, user.server) != null)
-                    Cache.Remove(user);
+                Cache.Remove(user);
+                OnRemove(user);
             }
 
             /**
              * Get or fetch a user by id or username.
              */
-            public async static UniTask<User> GetOrFetchUser(string search, string server)
+            public async static UniTask<User> GetOrFetchUser(string search)
             {
-                User user = GetUserById(search, server) ?? GetUserByUsername(search, server);
+                var user = GetUser(search);
                 if (user != null)
                     return user;
-                return await FetchUser(search, server);
+                return await FetchUser(search);
             }
 
             /**
              * Fetch a user by id or username.
              */
-            private async static UniTask<User> FetchUser(string search, string server_address)
+            private async static UniTask<User> FetchUser(string search)
             {
-                User user = new() { server = server_address, id = search, username = search };
+                var up = UserPatern.Parser(search);
+                var user = new User() { server = up.server, id = up.id, username = up.username };
                 return await user.Fetch();
             }
         }

@@ -2,49 +2,53 @@ using Cysharp.Threading.Tasks;
 
 namespace AVR
 {
-    namespace Instance
+    namespace Instances
     {
         public class InstanceManager : Base.Manager<Instance>
         {
+            public delegate void OnInstanceUpdateEvent(Instance instance);
+            public static event OnInstanceUpdateEvent OnInstanceUpdate;
+            public static void OnUpdate(Instance instance) => OnInstanceUpdate?.Invoke(instance);
+
+            public delegate void OnInstanceRemoveEvent(Instance instance);
+            public static event OnInstanceRemoveEvent OnInstanceRemove;
+            public static void OnRemove(Instance instance) => OnInstanceRemove?.Invoke(instance);
+
+            public delegate void OnInstanceAddEvent(Instance instance);
+            public static event OnInstanceAddEvent OnInstanceAdd;
+            public static void OnAdd(Instance instance) => OnInstanceAdd?.Invoke(instance);
+
             public static Instance GetInstance(string search)
             {
                 var ip = InstancePatern.Parser(search);
-                Instance ins = null;
                 if (ip == null)
                     return null;
-                if (ip.id != null)
-                    ins = GetInstanceById(ip.id, ip.server);
-                if (ip.name != null && ins == null)
-                    ins = GetInstanceByName(ip.name, ip.server);
-                return ins;
-            }
-
-            public static Instance GetInstanceById(string id, string address)
-            {
                 foreach (var instance in Cache)
-                    if (instance.id == id && instance.server == address)
+                    if (instance.id == ip.id && instance.server == ip.server)
                         return instance;
-                return null;
-            }
-
-            public static Instance GetInstanceByName(string name, string address)
-            {
-                foreach (var instance in Cache)
-                    if (instance.name == name && instance.server == address)
+                    else if (instance.name == ip.name && instance.server == ip.server)
                         return instance;
                 return null;
             }
 
             public static void SetInstance(Instance instance)
             {
-                RemoveInstance(instance);
-                Cache.Add(instance);
+                if (GetInstance(instance.id) != null)
+                {
+                    Cache.Add(instance);
+                    OnUpdate(instance);
+                }
+                else
+                {
+                    Cache.Add(instance);
+                    OnAdd(instance);
+                }
             }
 
             public static void RemoveInstance(Instance instance)
             {
-                if (GetInstanceById(instance.id, instance.server) != null)
-                    Cache.Remove(instance);
+                Cache.Remove(instance);
+                OnRemove(instance);
             }
 
             public static async UniTask<Instance> GetOrFetchInstance(string search)

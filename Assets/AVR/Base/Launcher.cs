@@ -8,6 +8,7 @@ namespace AVR
         public class Launcher : MonoBehaviour
         {
             public static Launcher Current { get; private set; } = null;
+            public string Type { get; set; } = "unknown";
             public static Launcher GetCurrent()
             {
                 if (Current != null) 

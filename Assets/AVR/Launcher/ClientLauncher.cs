@@ -1,30 +1,48 @@
 using Cysharp.Threading.Tasks;
+using UnityEngine;
 using UnityEngine.Networking;
 
 namespace AVR
 {
-    namespace Launcher
+    namespace Launchers
     {
         public class ClientLauncher : Base.Launcher
         {
             private void Start()
             {
                 Super();
+                Type = "client";
 
-                AVR.Utils.Debug.Log("Starting client...");
+                Utils.Debug.Log("Starting client...");
                 // run a task to fetch the server infos
                 Initalize().Forget();
             }
 
             async UniTaskVoid Initalize()
             {
-                var root = await User.UserManager.GetOrFetchUser("root", "127.0.0.1:3032");
-                if (root == null)
+                var config = Utils.ConfigManager.Open();
+                Utils.Debug.Log("token " + config.Get<string>("token"));
+                Utils.Debug.Log("server " + config.Get<string>("server"));
+                var userMe = await new Users.UserMe()
                 {
-                    AVR.Utils.Debug.Log("Failed to fetch root user.");
+                    token = config.Get<string>("token"),
+                    server = config.Get<string>("server")
+                }.FetchMe();
+
+                if (userMe == null)
+                {
+                    Utils.Debug.Log("Failed to fetch user infos.");
                     return;
                 }
-                AVR.Utils.Debug.Log("Root user fetched. " + root.username);
+                Utils.Debug.Log("User infos fetched. " + userMe.ToString());
+                Debug.Log(userMe.Home);
+                var w = await userMe.Home.Fetch();
+                if (w == null)
+                {
+                    Utils.Debug.Log("Failed to fetch home world.");
+                    return;
+                }
+                Utils.Debug.Log("Home world fetched. " + w.ToString());
             }
         }
     }

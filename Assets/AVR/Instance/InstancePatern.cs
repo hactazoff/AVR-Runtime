@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace AVR
 {
-    namespace Instance
+    namespace Instances
     {
         public class InstancePatern
         {

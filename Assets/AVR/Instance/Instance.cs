@@ -2,7 +2,7 @@ using Cysharp.Threading.Tasks;
 
 namespace AVR
 {
-    namespace Instance
+    namespace Instances
     {
         [System.Serializable]
         public class Instance
@@ -17,11 +17,11 @@ namespace AVR
             public string[] tags;
             public string[] users;
             public int connected;
-            public Server.Server Server => AVR.Server.ServerManager.GetServer(server);
+            public Servers.Server Server => Servers.ServerManager.GetServer(server);
 
             public async UniTask<Instance> Fetch()
             {
-                var server_infos = Server ?? await AVR.Server.ServerManager.GetOrFetchServer(server);
+                var server_infos = Server ?? await Servers.ServerManager.GetOrFetchServer(server);
                 if (server_infos == null)
                     return null;
                 var json = await Network.HTTPRequest.Get<Instance>(server_infos.gateways.CombineHTTP("/api/instances/" + id));

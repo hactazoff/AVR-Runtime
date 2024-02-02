@@ -2,7 +2,7 @@ using Cysharp.Threading.Tasks;
 
 namespace AVR
 {
-    namespace User
+    namespace Users
     {
 
         [System.Serializable]
@@ -15,14 +15,14 @@ namespace AVR
             public string banner;
             public string[] tags;
             public string server;
-            public Server.Server Server => AVR.Server.ServerManager.GetServer(server);
+            public Servers.Server Server => Servers.ServerManager.GetServer(server);
 
             /**
              * Fetch the user infos.
              */
             public async UniTask<User> Fetch()
             {
-                var server_infos = Server ?? await AVR.Server.ServerManager.GetOrFetchServer(server);
+                var server_infos = Server ?? await Servers.ServerManager.GetOrFetchServer(server);
                 if (server_infos == null)
                     return null;
                 var json = await Network.HTTPRequest.Get<User>(server_infos.gateways.CombineHTTP("/api/users/" + (id ?? username)));
@@ -38,6 +38,8 @@ namespace AVR
                 UserManager.SetUser(this);
                 return this;
             }
+
+            public override string ToString() => (username ?? id) + "@" + server;
         }
     }
 }

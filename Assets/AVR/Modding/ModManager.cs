@@ -41,6 +41,13 @@ namespace AVR
                     LoadAssembly(path);
                 return list.ToArray();
             }
+            
+            public static SDK.Modding.Mod GetMod(string id)
+            {
+                foreach (var mod in Cache)
+                    if (mod.Id == id) return mod;
+                return null;
+            }
 
             public static SDK.Modding.Mod LoadAssembly(string path)
             {
@@ -48,7 +55,7 @@ namespace AVR
                     Utils.Debug.LogError("Mod at path " + path + " does not exist or is not a dll file.");
                     return null;
                 }
-                var name  = Path.GetFileNameWithoutExtension(path);
+                var name = Path.GetFileNameWithoutExtension(path);
                 Utils.Debug.Log("Loading mod " + name + "...");
                 var assembly = System.Reflection.Assembly.LoadFile(path);
                 if (assembly == null) {
@@ -64,15 +71,24 @@ namespace AVR
                             if (m.GetType() == type) return null;
                         mod = (SDK.Modding.Mod)assembly.CreateInstance(type.FullName);
                     }
-                mod.OnLoad();
                 if (mod == null) {
                     Utils.Debug.LogError("Mod at path " + path + " does not contain a class that inherits from SDK.Modding.Mod.");
                     return null;
                 }
+                mod.Setup(assembly, name, path);
+                mod.OnLoad();
                 Cache.Add(mod);
                 return mod;
             }
-        }
 
+            public static AVR.SDK.Modding.Mod[] LoadedMods()
+            {
+                var li = new List<AVR.SDK.Modding.Mod>();
+                foreach (var mod in Cache)
+                    if (mod.loaded)
+                        li.Add(mod);
+                return li.ToArray();
+            }
+        }
     }
 }

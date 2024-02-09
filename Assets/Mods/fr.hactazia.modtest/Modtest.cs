@@ -2,29 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Modtest : AVR.SDK.Modding.Mod
+namespace fr.hactazia.modtest
 {
-    public override void OnLoad()
+    public class Modtest : AVR.SDK.Modding.Mod
     {
-        Id = "fr.hactazia.modtest";
-        Name = "Modtest";
-        Debug.Log("Modtest loaded!");
+        public override void OnLoad()
+        {
+            Id = "fr.hactazia.modtest";
+            Name = "Modtest";
+            Debug.Log("Modtest loaded!");
+            base.OnLoad();
+        }
+
+        public override void OnUnload()
+        {
+            Debug.Log("Modtest unloaded!");
+            base.OnUnload();
+        }
+
+        public override void OnClientStart()
+        {
+            Debug.Log("Modtest started on client!");
+        }
+
+        public override void OnUpdate()
+        {
+            Debug.Log("Modtest updated!");
+        }
+
+        public GameObject OnTab(AVR.SDK.UI.TabOptions tab)
+        {
+            Debug.Log("Modtest tabbed!");
+            return null;
+        }
     }
-
-    public override void OnUnload()
-    {
-        Debug.Log("Modtest unloaded!");
-    }
-
-    public override void OnStart()
-    {
-        Debug.Log("Modtest started!");
-    }
-
-    public override void OnUpdate()
-    {
-        Debug.Log("Modtest updated!");
-    }
-
-
 }

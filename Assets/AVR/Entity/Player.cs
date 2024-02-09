@@ -73,10 +73,13 @@ namespace AVR
                 {
                     case MenuType.MainMenu:
                         MainMenu.gameObject.SetActive(true);
+                        MainMenu.SetTab(new() { source = null, name = "avr.home" });
                         // MinimalMenu.gameObject.SetActive(false);
                         break;
                     case MenuType.InstanceMenu:
                         MainMenu.gameObject.SetActive(true);
+                        var sc = MainMenu.SetTab(new () { source = null, name = "avr.instance"});
+                        if(!sc) MainMenu.SetTab(new () { source = null, name = "avr.home"});
                         // MinimalMenu.gameObject.SetActive(false);
                         break;
                     case MenuType.MinimalMenu:
@@ -103,6 +106,12 @@ namespace AVR
                     // with height of 1m, the scale is 0.05
                     MainMenu.transform.localScale = 0.05f * size_height * Vector3.one;
                 }
+            }
+            public void Teleport(Transform transform)
+            {
+                AVR.Utils.Debug.Log("Teleporting player to " + transform.position);
+                Locomotion.SetPosition(transform.position);
+                Locomotion.SetRotation(transform.rotation);
             }
         }
     }

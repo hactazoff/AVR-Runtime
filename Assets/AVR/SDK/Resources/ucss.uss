@@ -1,0 +1,5 @@
+.unity-tab-view__header-container {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -26,8 +26,6 @@ namespace AVR
                 SDK.Modding.Mod[] mods = Modding.Manager.GetMods();
                 foreach (SDK.Modding.Mod mod in mods)
                     Utils.Debug.Log("Mod detected: " + mod.Name);
-
-                Utils.Debug.Log("Loading scenes...");
             }
         }
     }

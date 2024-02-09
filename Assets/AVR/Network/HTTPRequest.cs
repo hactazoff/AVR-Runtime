@@ -9,12 +9,9 @@ namespace AVR
     {
         public class HTTPRequest
         {
-
-            public delegate void OnSuccess<T>(Response<T> response);
-            public delegate void OnError<T>(Response<T> error);
-
-
-
+            public delegate void OnProgressEvent(Progress progress);
+            public static event OnProgressEvent OnProgress;
+            
             public async static UniTask<T> Get<T>(string url, UnityWebRequest request = null)
             {
                 try
@@ -22,11 +19,21 @@ namespace AVR
                     request ??= UnityWebRequest.Get(url);
                     request.SetRequestHeader("Cookie", "");
                     request.SetRequestHeader("User-Agent", "AVR/" + Application.version + " (Unity/" + Application.unityVersion + "; " + Application.platform + ")");
-                    await request.SendWebRequest();
-                    AVR.Utils.Debug.Log(request.downloadHandler.text);
-                    if (request.responseCode == 200)
-                        return JsonUtility.FromJson<Response<T>>(request.downloadHandler.text).data;
-                    return default;
+                    var res = await request.SendWebRequest();
+                    if (request.responseCode != 200)
+                        return default;
+                    while(!res.isDone)
+                    {
+                        AVR.Utils.Debug.Log("Downloading " + url + " " + request.downloadProgress + " " + request.uploadProgress);
+                        OnProgress?.Invoke(new Progress()
+                        {
+                            request = url,
+                            downloadprogress = request.downloadProgress,
+                            uploadprogress = request.uploadProgress
+                        });
+                        await UniTask.Yield();
+                    }
+                    return JsonUtility.FromJson<Response<T>>(request.downloadHandler.text).data;
                 }
                 catch { return default; }
             }
@@ -51,6 +58,33 @@ namespace AVR
                 }
                 catch { }
                 return null;
+            }
+            
+            public async static UniTask<bool> Download(string url, string path, UnityWebRequest request = null)
+            {
+                try
+                {
+                    request ??= UnityWebRequest.Get(url);
+                    request.downloadHandler = new DownloadHandlerFile(path);
+                    request.SetRequestHeader("Cookie", "");
+                    request.SetRequestHeader("User-Agent", "AVR/" + Application.version + " (Unity/" + Application.unityVersion + "; " + Application.platform + ")");
+                    var res = await request.SendWebRequest();
+                    if (request.responseCode != 200)
+                        return false;
+                    while(!res.isDone)
+                    {
+                        AVR.Utils.Debug.Log("Downloading " + url + " " + request.downloadProgress + " " + request.uploadProgress);
+                        OnProgress?.Invoke(new Progress()
+                        {
+                            request = url,
+                            downloadprogress = request.downloadProgress,
+                            uploadprogress = request.uploadProgress
+                        });
+                        await UniTask.Yield();
+                    }
+                    return true;
+                }
+                catch { return false; }
             }
         }
 

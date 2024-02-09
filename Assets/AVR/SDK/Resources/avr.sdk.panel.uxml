@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/AVR/SDK/Resources/ucss.uss?fileID=7433441132597879392&amp;guid=922f6060366bb964d938286bf1b9195a&amp;type=3#ucss" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Image name="avr-logo" image="logo.png" style="flex-grow: 1; position: absolute; bottom: 16px; right: 16px; background-image: resource(&apos;logo&apos;); width: 52px; height: 52px; background-color: rgba(255, 0, 0, 0); -unity-background-image-tint-color: rgba(0, 0, 0, 0.16);" />
+        <ui:VisualElement style="flex-grow: 0;">
+            <ui:TabView name="avr-tabs" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

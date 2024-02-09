@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 namespace AVR
@@ -6,17 +8,24 @@ namespace AVR
     {
         public class Menu : MonoBehaviour
         {
-            public Text hoclock;
+            private Text hoclock;
+            private Text hocfps;
             void Start()
             {
                 hoclock = Find("avr-navs-top-time-text", true, true)?.GetComponent<Text>();
+                hocfps = Find("avr-navs-top-fps-text", true, true)?.GetComponent<Text>();
             }
 
+            private DateTime lastTime = DateTime.Now;
             void Update()
             {
-                // detect time change and update time in the menu
                 if (hoclock != null)
-                    hoclock.text = System.DateTime.Now.ToString("HH:mm:ss");
+                    hoclock.text = System.DateTime.Now.ToString("HH:mm");
+                if (hocfps != null && (DateTime.Now - lastTime).TotalSeconds > 1)
+                {
+                    hocfps.text = (1.0f / Time.deltaTime).ToString("0 FPS");
+                    lastTime = DateTime.Now;
+                }
             }
 
             public GameObject Find(string name, bool recursive = false, bool includeInactive = false, GameObject gameObject = null)
@@ -40,6 +49,31 @@ namespace AVR
                 }
                 return null;
             }
+            
+            
+            public bool SetTab(AVR.SDK.UI.TabOptions options)
+            {
+                AVR.SDK.Modding.Mod mod = null;
+                GameObject tab = null;
+                foreach(var m in AVR.Modding.Manager.LoadedMods())
+                {
+                    var o = m.Call<GameObject>("OnTab", options);
+                    if(tab != null)
+                    {
+                        mod = m;
+                        tab = o;
+                        break;
+                    }
+                }
+                if(mod == null)
+                    return false;
+                tab.transform.SetParent(Content.transform);
+                
+                return true;
+            }  
+            public GameObject Content => Find("avr-ontent", true, false); 
         }
+        
+
     }
 }
